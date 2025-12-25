@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  font-size: 0.925vw;
+}
+@layer base {
+  @font-face {
+    font-family: "MonaSans";
+    src: url("/fonts/MonaSans.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "WFVisualSansRegularText";
+    src: url("/fonts/WFVisualSansRegularText.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "WFVisualSansSemiBold";
+    src: url("/fonts/WFVisualSansSemiBold.woff2") format("woff2");
+  }
+  body {
+    @apply bg-ui-black text-ui-white font-ui-mona font-medium uppercase tracking-ui-text text-[.875rem] lg:text-[.95rem];
+  }
+}

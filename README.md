@@ -23,6 +23,37 @@ If you are developing a production application, we recommend using TypeScript wi
   npm install gsap
   npm install @gsap/react
   npm install @tabler/icons-react
+  npm install --save-dev video.js
   npm install
 
+```
+
+## Used Colors
+
+```css
+.footer {
+  --color: #eb5939;
+  --color-primary: #b7ab98;
+}
+.footer_sound {
+  --color: #b7ab98;
+  --color-label: #4d4d4d;
+}
+.header {
+  --color: #eb5939;
+  --color-link-active: #b7ab98;
+  --fill: #b7ab98;
+}
+.is-red .footer {
+  --color: #0d0d0d;
+  --color-primary: #0d0d0d;
+}
+.is-red .footer_sound {
+  --color: #0d0d0d;
+}
+.is-red .header {
+  --color: #0d0d0d;
+  --color-link-active: #0d0d0d;
+  --fill: #0d0d0d;
+}
 ```
