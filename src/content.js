@@ -1,18 +1,32 @@
+import { Dribbble, Instagram, Linkedin, Youtube } from "./utils/icons";
+
 export const navigation = {
   menu: [
     { label: "About", href: "#about" },
     { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
-  socials: {
-    fa: "http://facebook.com/",
-    ig: "http://instagram.com/",
-    yt: "http://youtube.com/",
-    in: "http://linkedin.com/",
-  },
+  socials: [
+    {
+      Icon: Dribbble,
+      href: "http://facebook.com/",
+    },
+    {
+      Icon: Instagram,
+      href: "http://instagram.com/",
+    },
+    {
+      Icon: Youtube,
+      href: "http://youtube.com/",
+    },
+    {
+      Icon: Linkedin,
+      href: "http://linkedin.com/",
+    },
+  ],
   sound: {
     on: "On",
     off: "Off",
-    name: "Sound",
+    label: "Sound",
   },
 };

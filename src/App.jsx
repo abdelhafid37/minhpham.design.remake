@@ -1,6 +1,7 @@
 import ReactLenis from "lenis/react";
 import Header from "./components/layout/Header";
 import { useEffect, useState } from "react";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const [isResizing, setIsResizing] = useState(false);
@@ -21,6 +22,7 @@ function App() {
     <ReactLenis root>
       {isResizing && <div className="w-full h-full bg-ui-black fixed z-[100]"></div>}
       <Header />
+      <Footer />
       <main className=""></main>
     </ReactLenis>
   );
