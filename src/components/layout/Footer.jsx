@@ -1,16 +1,18 @@
-import React from "react";
 import { navigation } from "../../content";
+import { Magnet } from "../../utils/animations/Magnet";
 
 const { socials, sound } = navigation;
 
 export default function Footer() {
   return (
     <footer>
-      <ul className="block space-y-9 fixed left-[4vw] bottom-[11vh]">
+      <ul className="lg:block space-y-9 fixed left-[4vw] bottom-[11vh] hidden">
         {socials.map(({ Icon, href }) => (
-          <li key={href}>
-            <a href={href}>{Icon && <Icon className="size-6" />}</a>
-          </li>
+          <Magnet key={href}>
+            <li>
+              <a href={href}>{Icon && <Icon className="size-6" />}</a>
+            </li>
+          </Magnet>
         ))}
       </ul>
       <button className="uppercase fixed right-[4vw] bottom-[11vh] -rotate-90 origin-bottom-left translate-x-full space-x-1">

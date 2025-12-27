@@ -1,22 +1,10 @@
 import ReactLenis from "lenis/react";
 import Header from "./components/layout/Header";
-import { useEffect, useState } from "react";
 import Footer from "./components/layout/Footer";
+import useResize from "./hooks/useResize";
 
 function App() {
-  const [isResizing, setIsResizing] = useState(false);
-
-  useEffect(() => {
-    function onResize() {
-      setIsResizing(true);
-      setTimeout(() => setIsResizing(false), 500);
-    }
-
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
-  }, [isResizing]);
+  const isResizing = useResize();
 
   return (
     <ReactLenis root>

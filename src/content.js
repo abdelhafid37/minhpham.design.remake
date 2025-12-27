@@ -1,4 +1,4 @@
-import { Dribbble, Instagram, Linkedin, Youtube } from "./utils/icons";
+import { Dribbble, Instagram, Linkedin, Youtube } from "./components/common/icons";
 
 export const navigation = {
   menu: [
