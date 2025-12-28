@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { cloneElement, useRef } from "react";
 
-export function Magnet({ children, influence = 1, response = 0.3 }) {
+export default function Magnet({ children, influence = 1, response = 0.3 }) {
   const ref = useRef(null);
   const rectRef = useRef({ left: 0, top: 0, width: 0, height: 0 });
   const mouseRef = useRef({
